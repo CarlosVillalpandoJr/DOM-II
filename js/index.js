@@ -19,3 +19,21 @@ navigationLinks.forEach(element => {
         event.target.style.display = 'none'
     })
 })
+
+// Images
+let images = document.querySelectorAll('.img')
+images.forEach(element => {
+    element.addEventListener('dblclick', event => {
+        event.target.style.display = 'none';
+    })
+})
+
+// Sign up buttons
+
+let signUpBtn = document.querySelectorAll('.btn')
+signUpBtn.forEach(element => {
+    element.addEventListener('contextmenu', event => {
+        event.target.style.fontSize = '30px';
+        event.preventDefault()
+    })
+})
