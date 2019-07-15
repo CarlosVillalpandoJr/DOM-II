@@ -28,6 +28,11 @@ images.forEach(element => {
     })
 })
 
+let lastImage = document.querySelector('.last-img')
+lastImage.addEventListener('drag', () => {
+    lastImage.style.display = 'none'
+})
+
 // Sign up buttons
 
 let signUpBtn = document.querySelectorAll('.btn')
@@ -41,13 +46,29 @@ signUpBtn.forEach(element => {
 
 // Window Event Listeners 
 window.setTimeout(() => {
-    alert('Can you figure out all 10 Event Listeners?')
-}, 1000)
+    alert("You won't find 10 event listeners! :) ")
+}, 0)
 
 window.addEventListener('scroll', event => {
-    if(scrollY > 900) {
+    if(scrollY = 900) {
         console.log('You found me!!')
     }
 })
+
+// Body Event Listeners 
+const body = document.getElementsByTagName('body');
+body[0].addEventListener('keydown', event => {
+    event.target.style.backgroundColor = 'purple'
+})
+
+body[0].addEventListener('keyup', event => {
+    event.target.style.backgroundColor = 'gold'
+})
+
+body[0].addEventListener('click', event => {
+    event.target.style.backgroundColor = 'white'
+})
+
+
 
 
