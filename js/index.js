@@ -37,3 +37,17 @@ signUpBtn.forEach(element => {
         event.preventDefault()
     })
 })
+
+
+// Window Event Listeners 
+window.setTimeout(() => {
+    alert('Can you figure out all 10 Event Listeners?')
+}, 1000)
+
+window.addEventListener('scroll', event => {
+    if(scrollY > 900) {
+        console.log('You found me!!')
+    }
+})
+
+
